@@ -1,0 +1,144 @@
+.hero {
+    margin-bottom: 40px;
+    @include breakpoint(tablet){
+        margin-bottom: 180px;
+        position: relative;
+    }
+    @include breakpoint(tablethorizontal){
+        margin-bottom: 250px;
+    }
+    
+
+    .container{
+        @include breakpoint(tablet){
+            width: 60%;
+            padding-top: 30px;
+        }
+        @include breakpoint(desktop){
+            width: 55%;
+        }
+    }
+
+    &__title{
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+
+        @include breakpoint(desktop){
+            margin-bottom: 30px;
+            font-size: 48px;
+            line-height: 60px;
+        }
+    }
+
+    &__subtitle{
+        margin-bottom: 20px;
+        color: $grey;
+        line-height: 26px;
+        @include breakpoint(desktop){
+            margin-bottom: 40px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            width: 85%;
+            
+        }
+    }
+
+    &__buttons{
+        margin-bottom: 60px;
+    }
+
+    &__img{
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+        @include breakpoint(tablet){
+            img {
+                display: none;
+            }
+        }
+        
+    }
+
+    &__number{
+        display: inline-block;
+        background-color:$white;
+        padding: 5px;
+        gap:10px;
+        text-align: left;
+        position: absolute;
+
+        span {
+            display: block;
+        }
+        &-title{
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+            color: $grey;
+        }
+
+        &-number{
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            color: $black;
+        }
+
+        &-1{
+            padding: 16px 45px 16px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+            bottom:0;
+            left: 0;
+
+            @include breakpoint(tablet){
+                position: absolute;
+                top:-100px;
+                left: 350px;
+            }
+
+            @include breakpoint(tablethorizontal){
+                position: absolute;
+                top:-92px;
+                left: 535px;
+            }
+
+            @include breakpoint(desktop){
+                top: -100px;
+                left: 645px;
+            }
+        }
+
+        &-2{
+            padding: 18px;
+            border-radius: 10px;
+            box-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+            top:0;
+            right: 0;
+
+            @include breakpoint(tablet){
+                top: -375px;
+                right: -43px;
+            }
+
+            @include breakpoint(tablethorizontal){
+                top: -329px;
+                right: -55px;
+            }
+
+            @include breakpoint(desktop){
+                top: -396px;
+                right: -53px;
+            }
+
+        }
+
+    }
+}

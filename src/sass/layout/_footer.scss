@@ -1,0 +1,30 @@
+footer.footer-principal{
+    padding:20px;
+    padding-bottom: 20px;
+    background-color: $black;
+    @include breakpoint(tablet){
+        padding: 36px;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img {
+        width: 80%;
+
+        @include breakpoint(tablethorizontal){
+            width: 90%;
+        }
+
+        @include breakpoint(desktop){
+            width: 100%;
+        }
+
+    }
+    
+    ul{
+        @include reset-list;
+    }
+}

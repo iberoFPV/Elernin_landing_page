@@ -1,0 +1,16 @@
+body {
+    @include breakpoint(tablet){
+        background-image: url("../img/woman-tablet.png");
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position: top 10px right;
+    }
+    @include breakpoint(tablethorizontal){
+        background-size: 350px;
+        
+    }
+
+    @include breakpoint(desktop){
+        background-size: 420px;
+    }
+}

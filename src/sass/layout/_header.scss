@@ -1,0 +1,22 @@
+header.header-principal{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 38px;
+    @include breakpoint(tablet){
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img{
+        width: 75%;
+    }
+    ul{
+        @include reset-list;
+    }
+}
